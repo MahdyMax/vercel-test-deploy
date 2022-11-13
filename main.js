@@ -39,8 +39,12 @@ app.get('/Contact', (req, res) => {
 })
 
 
-app.get('/sent', (req, res) => {
-  res.render('sent')
+app.get('/suggsend', (req, res) => {
+  res.render('suggsend')
+})
+
+app.get('/suppsend', (req, res) => {
+  res.render('suppsend')
 })
 //
 
@@ -101,15 +105,15 @@ app.post('/sendemail', (req, res) => {
     `;
 
     sendEmail(to, from, subject, output);
-    res.send('sent')
-    // res.render('/sent')
+    // res.send('sent')
+    res.redirect('/suggsend')
 }); 
 
 app.post('/sendsupport', (req, res) => {
     const { name, email, message } = req.body;
 
     const from = 'Mahdyupwork@gmail.com';
-    const to = "suggestions@ravenvending.win";
+    const to = "support@ravenvending.win";
     const subject = "Contact Inquiry";
 
     const output = `
@@ -125,8 +129,8 @@ app.post('/sendsupport', (req, res) => {
     `;
 
     sendEmail(to, from, subject, output);
-    res.send('sent')
-    // res.redirect('/sent')
+    // res.send('sent')
+    res.redirect('/suppsend')
 }); 
 
 

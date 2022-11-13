@@ -85,17 +85,19 @@ app.post('/sendemail', (req, res) => {
     const { name, email, message } = req.body;
 
     const from = 'MahdyUpwork@gmail.com';
-    const to = "maxvegra@gmail.com";
-    const subject = "New Contact Request";
+    const to = "suggestions@ravenvending.win";
+    const subject = "Suggestion Inquiry";
 
     const output = `
-    <h3>You have new contact request</h3>
     <h3>Contact details</h3>
     <ul>
-        <li>Name: ${name}</li>
-        <li>email: ${email}</li>
-        <li>message: ${message}</li>
+        <h4><strong>Name:  ${name}</h4></strong>
+        <h4><strong>Email:  ${email}</h4></strong>
     </ul>
+    <h3>Message</h3>
+    <ul>
+        <h4><strong>${message}</h4></strong>
+    </ul>    
     `;
 
     sendEmail(to, from, subject, output);
@@ -107,16 +109,18 @@ app.post('/sendsupport', (req, res) => {
     const { name, email, message } = req.body;
 
     const from = 'Mahdyupwork@gmail.com';
-    const to = " suggestions@ravenvending.win";
-    const subject = "New Contact Request";
+    const to = "suggestions@ravenvending.win";
+    const subject = "Contact Inquiry";
 
     const output = `
-    <h3>You have new contact request</h3>
     <h3>Contact details</h3>
     <ul>
-        <li>Name: ${name}</li>
-        <li>email: ${email}</li>
-        <li>message: ${message}</li>
+        <h4><strong>Name:  ${name}</h4></strong>
+        <h4><strong>Email:  ${email}</h4></strong>
+    </ul>
+    <h3>Message</h3>
+    <ul>
+        <h4><strong>${message}</h4></strong>
     </ul>
     `;
 

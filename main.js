@@ -85,7 +85,7 @@ app.post('/sendemail', (req, res) => {
     const { name, email, message } = req.body;
 
     const from = 'MahdyUpwork@gmail.com';
-    const to = "support@ravenvending.win";
+    const to = "maxvegra@gmail.com";
     const subject = "New Contact Request";
 
     const output = `

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RavenVending</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="has-animations">
+    <nav class="nav-menu" id="nav-menu">
+        <ul class="link-group">
+            <li class="reveal-from-top nav-list" data-reveal-delay="100"><a href="/">Home</a> <a
+                    href="/Suggestion">Product Suggestion</a> <a href="/Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="body-wrap">
+        <header class="site-header invert-color">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="left">
+                        <div class="brand reveal-from-top">
+                            <h1><a href="/"><img class="logo-desktop" src="images/logo type.svg" alt="RavenVending">
+                                    <img class="logo-phone" src="images/logo.svg" alt="RavenVending"></a></h1>
+                        </div>
+                    </div>
+                    <div class="right"><button id="header-nav-toggle" class="header-nav-toggle reveal-from-top"
+                            data-reveal-delay="100" aria-controls="primary-menu" aria-expanded="false"><span
+                                class="screen-reader">Menu</span> <span class="hamburger"><span
+                                    class="hamburger-inner"></span></span></button>
+                        <nav id="header-nav" class="header-nav">
+                            <div class="header-nav--inner">
+                                <ul class="list-reset text-xxs link-right">
+                                    <li class="reveal-from-top list" data-reveal-delay="100"><a href="/">Home</a> <a
+                                            class="active-tab" href="/Suggestion">Product Suggestion</a> <a
+                                            href="/Contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="site-content">
+            <section class="section-form">
+                <div class="container-form">
+                    <div class="content-text">
+                        <div class="text-top">
+                            <h1 class="head-big-1 bot-pad-phone reveal-from-left" data-reveal-delay="300">Let's talk
+                            </h1>
+                            <p class="head-regular-1 reveal-from-left" data-reveal-delay="300">Let us know what<br>you
+                                have in mind</p>
+                        </div>
+                        <div class="text-bottom">
+                            <h1 class="head-mail-light reveal-from-left" data-reveal-delay="300">Or mail us</h1>
+                            <h1 class="head-mail-bold reveal-from-left" data-reveal-delay="300">Hello@email.com</h1>
+                        </div>
+                    </div>
+                    <div class="content-form reveal-from-top" data-reveal-delay="300">
+                        <form class="contact-form" method="POST" action="/sendemail">
+                            <div class="form-group">
+                                <div class="label-group name"><label for="user-name"
+                                        class="label-name head-label">Name</label></div><input name="name" type="text"
+                                    id="user-name" class="input-name head-input" placeholder="John etc">
+                            </div>
+                            <div class="form-group">
+                                <div class="label-group email"><label for="user-email"
+                                        class="label-email head-label">Email address</label></div><input name="email"
+                                    type="email" id="user-email" class="input-email head-input"
+                                    placeholder="Hello@John.com etc">
+                            </div>
+                            <div class="form-group">
+                                <div class="label-group message"><label for="user-message"
+                                        class="label-message head-label">Message</label></div><textarea name="message"
+                                    class="input-message head-input" name="message" id="user-message" cols="fixed"
+                                    rows="4" placeholder="Speak your mind. Let us know"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="site-footer margin-top-sec">
+        <div class="container-5">
+            <div class="brand"><img src="images/logo type.svg" alt="RavenVending LogoType" class="reveal-from-left"
+                    date-reveal-delay="300"></div>
+            <div class="links reveal-from-left" data-reveal-offset="0" date-reveal-delay="300"><a href="/Suggestion"
+                    class="link-1">Product Suggestion</a> <a href="/Contact" class="link-2">Contact Us</a></div>
+            <div class="address reveal-from-left" data-reveal-offset="0" data-reveal-delay="300">
+                <p class="location head-add">Conroe, Texas, USA</p>
+                <div class="flex-line">
+                    <p class="phone-no head-add">+1 (346) 536-8624</p>
+                    <p class="rights head-add">© 2022 Raven Vending Innovations L.L.C. , all rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

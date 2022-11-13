@@ -9,6 +9,7 @@ const sendEmail = require('./public/js/app');
 
 const PORT = process.env.PORT || 5000;
 
+
 // For ( sendgrid )
 app.use(express.urlencoded({ extended: false}));
 //
@@ -19,6 +20,7 @@ app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/images', express.static(__dirname + 'public/images'))
 app.use(express.json())
+
 //
 
 // Set views - engine

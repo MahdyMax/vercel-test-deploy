@@ -1,13 +1,13 @@
 {
   "name": "web-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "express app",
+  "main": "main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node main.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mahdy-Max",
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",

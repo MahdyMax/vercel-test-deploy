@@ -38,7 +38,6 @@ app.get('/Contact', (req, res) => {
   res.render('Contact')
 })
 
-
 app.get('/suggsend', (req, res) => {
   res.render('suggsend')
 })

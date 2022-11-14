@@ -29,7 +29,7 @@ app.set('view engine', 'ejs')
 
 // Set views - pages
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render(__dirname + '/views/index.ejs')
 })
 app.get('/Suggestion', (req, res) => {
   res.render('Suggestion')

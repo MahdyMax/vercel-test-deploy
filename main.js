@@ -34,7 +34,6 @@ app.get('/suggsend', (req, res) => {
 app.get('/suppsend', (req, res) => {
   res.render(__dirname + '/views/suppsend.ejs')
 })
-//
 
 // Send email 
 

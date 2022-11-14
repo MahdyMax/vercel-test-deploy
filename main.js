@@ -24,7 +24,7 @@ app.use(express.json())
 //
 
 // Set views - engine
-app.set('views', '/views')
+app.set('views', './views')
 app.set('view engine', 'ejs')
 
 // Set views - pages

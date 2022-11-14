@@ -32,18 +32,18 @@ app.get('/', (req, res) => {
   res.render(__dirname + '/views/index.ejs')
 })
 app.get('/Suggestion', (req, res) => {
-  res.render('Suggestion')
+  res.render(__dirname + '/views/Suggestion.ejs')
 })
 app.get('/Contact', (req, res) => {
-  res.render('Contact')
+  res.render(__dirname + '/views/Contact.ejs')
 })
 
 app.get('/suggsend', (req, res) => {
-  res.render('suggsend')
+  res.render(__dirname + '/views/suggsend.ejs')
 })
 
 app.get('/suppsend', (req, res) => {
-  res.render('suppsend')
+  res.render(__dirname + '/views/suppsend.ejs')
 })
 //
 

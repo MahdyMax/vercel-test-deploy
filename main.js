@@ -28,7 +28,7 @@ app.set('views', './views')
 app.set('view engine', 'ejs')
 
 // Set views - pages
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
   res.render('index')
 })
 app.get('/Suggestion', (req, res) => {
